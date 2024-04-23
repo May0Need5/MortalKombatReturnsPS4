@@ -263,6 +263,98 @@ header {
 }
 
 
+    .cac-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; 
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .box {
+          max-width: 852px;
+        border-radius: 15px;
+        position: relative;
+        width: 95%;
+        overflow: hidden;
+        height: 418px;
+        margin: 20px auto;
+       
+    }
+    
+    .cac-bg-img {
+      
+      position: absolute;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-content: center;
+    }
+    
+    #stage {
+        display: flex;
+        position: relative;
+        top: 13px;
+        margin: 0 auto;
+        width: 100%;
+        height: 453px;
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: center;
+      }
+    
+      #stage a {
+        margin-top: 37px;
+        border-radius: 10px;
+        position: absolute;
+        display: flex;
+      }
+     #stage a img {
+        position: relative;
+        display: flex;
+        width: 100%;
+        border-radius: 7px;
+        padding: 0px;
+        background: #fff0;
+        height: auto;
+        max-height: 325px;
+       
+    }
+    
+    .cac-liner {
+      margin-top: 36px;
+      position: relative;
+        display: flex;
+        width: 400px;
+        border-radius: 5px;
+        padding: 0px;
+        
+        height: auto;
+        max-height: 323px;
+      background-color: none;
+      box-shadow: 1px 1px 20px #00adee;
+        border: 2px solid #00adee;
+     z-index: 40;
+    }
+    
+      #stage a:nth-of-type(1) {
+        animation-name: fader;
+        animation-delay: 3s;
+        animation-duration: 2s;
+        z-index: 20;
+      }
+      #stage a:nth-of-type(2) {
+        z-index: 10;
+      }
+      #stage a:nth-of-type(n+3) {
+        display: none;
+      }
+    
+      @keyframes fader {
+        from { opacity: 1.0; }
+        to   { opacity: 0.0; }
+      }
 
 @media screen and (max-width: 600px) {
 
@@ -451,98 +543,6 @@ header {
     }
 
 
-    .cac-bg {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden; 
-        position: relative;
-        margin: 0 auto;
-    }
-    
-    .box {
-          max-width: 852px;
-        border-radius: 15px;
-        position: relative;
-        width: 95%;
-        overflow: hidden;
-        height: 418px;
-        margin: 20px auto;
-       
-    }
-    
-    .cac-bg-img {
-      
-      position: absolute;
-      display: flex;
-      height: 100%;
-      justify-content: center;
-      align-content: center;
-    }
-    
-    #stage {
-        display: flex;
-        position: relative;
-        top: 13px;
-        margin: 0 auto;
-        width: 100%;
-        height: 453px;
-        overflow: hidden;
-        flex-direction: row;
-        justify-content: center;
-      }
-    
-      #stage a {
-        margin-top: 37px;
-        border-radius: 10px;
-        position: absolute;
-        display: flex;
-      }
-     #stage a img {
-        position: relative;
-        display: flex;
-        width: 100%;
-        border-radius: 7px;
-        padding: 0px;
-        background: #fff0;
-        height: auto;
-        max-height: 325px;
-       
-    }
-    
-    .cac-liner {
-      margin-top: 36px;
-      position: relative;
-        display: flex;
-        width: 400px;
-        border-radius: 5px;
-        padding: 0px;
-        
-        height: auto;
-        max-height: 323px;
-      background-color: none;
-      box-shadow: 1px 1px 20px #00adee;
-        border: 2px solid #00adee;
-     z-index: 40;
-    }
-    
-      #stage a:nth-of-type(1) {
-        animation-name: fader;
-        animation-delay: 3s;
-        animation-duration: 2s;
-        z-index: 20;
-      }
-      #stage a:nth-of-type(2) {
-        z-index: 10;
-      }
-      #stage a:nth-of-type(n+3) {
-        display: none;
-      }
-    
-      @keyframes fader {
-        from { opacity: 1.0; }
-        to   { opacity: 0.0; }
-      }
     
     @media screen and (max-width: 4000px) {
       
