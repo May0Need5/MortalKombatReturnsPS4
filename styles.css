@@ -506,9 +506,9 @@ header {
 
         }
         body {
-            height: 500px;
+            /* height: 500px; */
            
-            width: 800px;
+            width: 98%;
             position: relative;
             display: flex;
             margin-top: 5px;
