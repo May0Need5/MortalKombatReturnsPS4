@@ -1,6 +1,6 @@
 function showModalPopUp() {
 
-    var popupWindow = window.open("video.html", "ModalPopUp", "width=800", "height=500", "left=200", "top=50");
+    var popupWindow = window.open("video.html", "ModalPopUp", "width=600", "height=400", "left=200", "top=50");
 
     popupWindow.focus();
    
